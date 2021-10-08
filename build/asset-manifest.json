@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0519d956.chunk.css",
+    "main.js": "/static/js/main.69ff4126.chunk.js",
+    "main.js.map": "/static/js/main.69ff4126.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7a41cb1b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7a41cb1b.js.map",
+    "static/js/2.3ebb895c.chunk.js": "/static/js/2.3ebb895c.chunk.js",
+    "static/js/2.3ebb895c.chunk.js.map": "/static/js/2.3ebb895c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.0519d956.chunk.css.map": "/static/css/main.0519d956.chunk.css.map",
+    "static/js/2.3ebb895c.chunk.js.LICENSE.txt": "/static/js/2.3ebb895c.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Louis George Cafe.17cd25f8.ttf",
+    "static/media/check-square.6ffba6b5.svg": "/static/media/check-square.6ffba6b5.svg",
+    "static/media/file-text.cb094fae.svg": "/static/media/file-text.cb094fae.svg",
+    "static/media/file.57e885a5.svg": "/static/media/file.57e885a5.svg",
+    "static/media/home.f981ee9d.svg": "/static/media/home.f981ee9d.svg",
+    "static/media/log-out.3d243e9f.svg": "/static/media/log-out.3d243e9f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a41cb1b.js",
+    "static/js/2.3ebb895c.chunk.js",
+    "static/css/main.0519d956.chunk.css",
+    "static/js/main.69ff4126.chunk.js"
+  ]
+}
