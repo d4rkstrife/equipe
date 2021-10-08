@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React, { Fragment } from 'react';
+//import './App.css';
 import ListeGare from './ListeGare';
 import firebase from 'firebase';
 import LogIn from './LogIn';
@@ -30,34 +30,134 @@ class App extends React.Component {
 
 
           <BrowserRouter>
-            <div>
-              <ul className="navibar">
-                <li className="navibar_lien">
-                  <Link to="/"><img id="logo_maison" src={logoMaison} alt="Accueil" /></Link>
+            <Fragment>
+              <div className="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+                <div className="app-header header-shadow">
+                  <div className="app-header__logo">
+                    <div className="logo-src"></div>
+                    <div className="header__pane ml-auto">
+                      <div>
+                        <button type="button" className="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                          <span className="hamburger-box">
+                            <span className="hamburger-inner"></span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="app-header__mobile-menu">
+                    <div>
+                      <button type="button" className="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span className="hamburger-box">
+                          <span className="hamburger-inner"></span>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                  <div className="app-header__menu">
+
+                  </div>    <div className="app-header__content">
+
+
+
+                  </div>
+                </div>
+
+                <div className="app-main">
+                  <div className="app-sidebar sidebar-shadow">
+                    <div className="app-header__logo">
+                      <div className="logo-src"></div>
+                      <div className="header__pane ml-auto">
+                        <div>
+                          <button type="button" className="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span className="hamburger-box">
+                              <span className="hamburger-inner"></span>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="app-header__mobile-menu">
+                      <div>
+                        <button type="button" className="hamburger hamburger--elastic mobile-toggle-nav">
+                          <span className="hamburger-box">
+                            <span className="hamburger-inner"></span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                    <div className="app-header__menu">
+                      <span>
+                        <button type="button" className="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                          <span className="btn-icon-wrapper">
+                            <i className="fa fa-ellipsis-v fa-w-6"></i>
+                          </span>
+                        </button>
+                      </span>
+                    </div>    <div className="scrollbar-sidebar">
+                      <div className="app-sidebar__inner">
+                        <ul className="vertical-nav-menu">
+                          <li className="app-sidebar__heading">Dashboard</li>
+                          <li>
+                            <Link to="/">Liste des Gares</Link>
+
+                          </li>
+                          <li>
+                            <Link to="/form">Rapport</Link>
+                          </li>
+                          <li>
+                            <Link to="/formList">Liste des rapports</Link>
+                          </li>
+                          <li>
+                            <button className="mb-2 mr-2 btn btn-danger" onClick={this.logOut}>Deconnexion
+                            </button>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div className="app-main__outer">
+                    <div className="app-main__inner main-route-place">
+                      <Route exact path="/" component={ListeGare} />
+                      <Route path="/formList" component={() => <FormList isAdmin={this.state.isAdmin} />} />
+                      <Route path="/form" component={Form} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </Fragment>
+
+            {/*    <div>
+              <ul classNameName="navibar">
+                <li classNameName="navibar_lien">
+                  <Link to="/">Liste des Gares</Link>
                 </li>
-                <li className="navibar_lien">
+                <li classNameName="navibar_lien">
                   <Link to="/form"><img id="logo_maison" src={logoForm} alt="Formulaire" /></Link>
                 </li>
                 {this.state.isAdmin ? (
-                  <li className="navibar_lien">
+                  <li classNameName="navibar_lien">
                     <Link to="/formList"><img id="logo_maison" src={logoFormConsult} alt="Liste formulaires" /></Link>
                   </li>
                 ) : ("")}
-                <li className="navibar_lien">
+                <li classNameName="navibar_lien">
                   <button id="deco_button" onClick={this.logOut}><img id="logo_deco" src={logoDeco} alt="Deco" /></button>
                 </li>
 
               </ul>
 
               <hr />
-              <div className="main-route-place">
+              <div classNameName="main-route-place">
                 <Route exact path="/" component={ListeGare} />
                 <Route path="/formList" component={() => <FormList isAdmin={this.state.isAdmin} />} />
                 <Route path="/form" component={Form} />
               </div>
-            </div>
+                </div> */}
           </BrowserRouter>
-        </div>
+        </div >
       );
     } else if (this.state.pageReady && !this.state.connectedUser) {
       return (

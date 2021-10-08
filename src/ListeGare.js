@@ -34,18 +34,16 @@ class ListeGare extends React.Component {
         } else {
 
             return (
-                <div>
-                    <table>
-                        <thead>
-                            <td>Gare</td>
-                            <td>Dernière Contribution</td>
-                        </thead>
-                        {
-                            items.map((item, index) =>
-                                <Gare key={index} data={item.data()} id={item.id} />
-                            )
-                        }
-                    </table>
+                <div className="col-md-6">
+                    <div id="accordion" className="accordion-wrapper mb-3">
+                        <div className="card">
+                            {
+                                items.map((item, index) =>
+                                    <Gare key={index} data={item.data()} id={item.id} />
+                                )
+                            }
+                        </div>
+                    </div>
                 </div>
             )
         }
