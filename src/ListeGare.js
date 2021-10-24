@@ -34,7 +34,7 @@ class ListeGare extends React.Component {
         } else {
 
             return (
-                <div className="col-md-6">
+                <div className="col-md-12">
                     <div id="accordion" className="accordion-wrapper mb-3">
                         <div className="card">
                             {

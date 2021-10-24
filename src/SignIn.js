@@ -18,9 +18,15 @@ class SignIn extends Component {
 
             <Fragment>
                 <form>
-                    <label htmlFor="mail">mail:</label> <input id="mail" type="text" name="username" autoComplete="username" value={this.state.mail} onChange={this.handleChangeMail} required></input>
-                    <label htmlFor="password">password:</label> <input id="password " type="password" name="password" autoComplete="current-password" value={this.state.password} onChange={this.handleChangePassword} required></input>
-                    <button className="pink_button" type="submit" onClick={this.firebaseLogin}>Login</button>
+                    <div className="mb-12">
+                        <label htmlFor="mail" className="form-label">Email</label>
+                        <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="mail@example.com" value={this.state.mail} onChange={this.handleChangeMail} required />
+                    </div>
+                    <div className="mb-12">
+                        <label htmlFor="password" className="form-label">Mot de passe</label>
+                        <input type="password" className="form-control" id="password" name="password" placeholder="Mot de Passe" value={this.state.password} onChange={this.handleChangePassword} required />
+                    </div>
+                    <button type="button" className="btn btn-success" type="submit" onClick={this.firebaseLogin}>Login</button>
                 </form>
                 <p>{this.state.error}</p>
             </Fragment>

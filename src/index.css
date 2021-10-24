@@ -1,205 +1,233 @@
 @font-face {
-  font-family: "Louis George Cafe";
-  src: url("../src/font/Louis\ George\ Cafe.ttf") format("truetype");
- }
-body {
-  margin: 0;
-  font-family: 'Louis George Cafe',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color:#b9cada;
-  color: black;
+    font-family: "Louis George Cafe";
+    src: url("../src/font/Louis\ George\ Cafe.ttf") format("truetype");
 }
+
+body {
+    margin: 0;
+    font-family: 'Louis George Cafe', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #b9cada;
+    color: black;
+}
+
 #root {
-  height:100%
+    height: 100%
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
 .gare_elt {
-  margin: 8px;
+    margin: 8px;
     border-radius: 10px;
     background-color: #c3d7ea;
     color: #000000;
     padding: 10px;
 }
-.gare_elt h2{
-  margin-top: 6px;
-  font-size: 1em;
+
+.gare_elt h2 {
+    margin-top: 6px;
+    font-size: 1em;
 }
+
 .liste_trains {
- display: flex;
- flex-direction: column;
- align-items: center;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.trainElt{
-  font-family: 'Mont';
-  font-size: 0.8em;
-  width:95%;
-  display:flex;
-  justify-content: space-between;
-}
-.equipement_elt{
-  display:flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-bottom: 25px;
-}
-.App{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  align-content: center;
-  padding-bottom: 45px;
-}
-.connexion_form{
-  border: 2px solid black;
-  align-self: center;
-  width: 50%;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  
 
+.trainElt {
+    font-family: 'Mont';
+    font-size: 0.8em;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
 }
-.Ok{
-  border : 2px solid #4c9c4c;
-  color: #4c9c4c;
+
+.equipement_elt {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
 }
-.panne{
-  border : 2px solid #f34343;
-  color :#f34343;
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-content: center;
+    padding-bottom: 45px;
 }
-button{
-  font-family: 'Mont';
+
+.connexion_form {
+    border: 2px solid black;
+    align-self: center;
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
 }
-.pink_button{
-  background-color: #b9cada;
-  border: 2px solid #000000;
-  border-radius: 10px;
-  color: #000000;
-  font-size: 1em;
+
+.Ok {
+    border: 2px solid #4c9c4c;
+    color: #4c9c4c;
 }
-.etat_button{  
-  height: 100%;
-  width:100%;
-  border-radius: 10px;
+
+.panne {
+    border: 2px solid #f34343;
+    color: #f34343;
 }
-.equipement_container{
-  height: 25px;
-  margin: 5px;
+
+button {
+    font-family: 'Mont';
 }
-.login{
-  border: 1px solid black;
-  border-radius: 10px;
-  width: 80%;
-  margin: 10%;
-  font-weight: bold;
+
+.pink_button {
+    background-color: #b9cada;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 1em;
 }
-.active{
-  font-size: larger;
+
+.etat_button {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
 }
-.inactive{
-  color: #5d5d5d;
+
+.equipement_container {
+    height: 25px;
+    margin: 5px;
 }
-.login_choice{
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  padding: 0;
-  margin: 0 0 15px 0;
+
+.login {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 80%;
+    margin: 10%;
+    font-weight: bold;
 }
-.login_choice li{
-  width: 50%;
-  
+
+.active {
+    font-size: larger;
 }
+
+.inactive {
+    color: #5d5d5d;
+}
+
+.login_choice {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.login_choice li {
+    width: 50%;
+}
+
 .login_choice li a {
-  color: #000000;
+    color: #000000;
 }
-.login form{
-  display : flex;
-  flex-direction: column;
-  align-items: center;
-}
-.login form input{
-  margin-bottom: 12px;
-  width:80%
-}
-.navibar{
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-  height: 6%;
-  background-color : #b1b7e2;
-  border-top: 2px solid black;
-}
-.navibar_lien{
-  color:white;
-  width:60px;
-  list-style-type: none;
 
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#logo_maison{
-  height: 70%;
-  margin-top: 15%;
+
+.login form input {
+    margin-bottom: 12px;
 }
-#logo_deco{
-  height:70%
+
+.navibar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    height: 6%;
+    background-color: #b1b7e2;
+    border-top: 2px solid black;
 }
-#deco_button{
-  background-color: #b1b7e2;
-  height: 100%;
-  border: 0;
-  padding-top: 10%;
+
+.navibar_lien {
+    color: white;
+    width: 60px;
+    list-style-type: none;
 }
-.form-rapport{
-  height: 65vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+#logo_maison {
+    height: 70%;
+    margin-top: 15%;
 }
-.form-rapport button{
-  width: 135px;
-  align-self: center;
+
+#logo_deco {
+    height: 70%
 }
-#commentaires{
-  width: 332px;
+
+#deco_button {
+    background-color: #b1b7e2;
+    height: 100%;
+    border: 0;
+    padding-top: 10%;
+}
+
+.form-rapport {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-rapport button {
+    width: 135px;
+    align-self: center;
+}
+
+#commentaires {
+    width: 332px;
     height: 95px;
 }
-.rapport-details{
-  background-color: #c3d7ea;
-  border-top: 1px solid #9390a2;
-  border-bottom: 1px solid #9390a2;
-}
-.info-form{
-  display: flex;
-  justify-content: center;
-}
-.detail-controle{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.detail-controle-elt{
-  display: flex;
-  flex-direction: column;
-  background-color: #d0e2f3;
-  border-radius: 10px;
-  width: 23%;
-}
-.detail-controle-com{
-  background-color: #d0e2f3;
-}
-#reset-button{
-  margin-top: 50px;
+
+.rapport-details {
+    background-color: #c3d7ea;
+    border-top: 1px solid #9390a2;
+    border-bottom: 1px solid #9390a2;
 }
 
+.info-form {
+    display: flex;
+    justify-content: center;
+}
+
+.detail-controle {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.detail-controle-elt {
+    display: flex;
+    flex-direction: column;
+    background-color: #d0e2f3;
+    border-radius: 10px;
+    width: 23%;
+}
+
+.detail-controle-com {
+    background-color: #d0e2f3;
+}
+
+#reset-button {
+    margin-top: 50px;
+}

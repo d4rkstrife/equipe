@@ -32,7 +32,7 @@ class SignUp extends Component {
         event.preventDefault();
         firebase.auth().createUserWithEmailAndPassword(this.state.mail, this.state.password)
             .then(() => {
-                var user = firebase.auth().currentUser
+                let user = firebase.auth().currentUser
                 user.updateProfile({
                     displayName: that.state.nom
                 })
@@ -42,6 +42,18 @@ class SignUp extends Component {
                 that.setState({ error: error.message })
                 console.log(error.code, error.message)
                 // ...
+            });
+        const db = firebase.firestore();
+        db.collection("users").add({
+            name: that.state.nom,
+            mail: this.state.mail,
+            isAdmin: false
+        })
+            .then((docRef) => {
+                console.log("Document written with ID: ", docRef.id);
+            })
+            .catch((error) => {
+                console.error("Error adding document: ", error);
             });
     }
     handleChangeNom(event) {
